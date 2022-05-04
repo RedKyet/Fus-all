@@ -1,7 +1,7 @@
 html, body {
   height: 100%;
   width: 100%;
-  overflow: hidden;  
+  
 }
 .background-image {
   position: fixed;
@@ -25,6 +25,7 @@ html, body {
 .topnav {
   overflow: hidden;
   background-color: #333;
+  border-radius: 25px;
 }
 
 .topnav a {
@@ -42,7 +43,7 @@ html, body {
 }
 
 .topnav a.active {
-  background-color: #a91504;
+  background-color: #32B100;
   color: white;
 }
 
@@ -52,138 +53,112 @@ html, body {
   color: white;
   text-align: center;
 }
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-body {
-	height: 100vh;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-perspective: 1000px;
-	perspective: 1000px;
-	-webkit-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-	position: relative;
-	background-color: #111;
-	font-family: "Montserrat";
+  #wrapper2{
+  font-family: "Helvetica";
+  font-size: 30px;
+  color: white;
+  text-align: center;
 }
 
-.container {
-	min-width: 700px;
-	min-height: 350px;
-	border-radius: 20px;
-	position: relative;
-	-webkit-transition: 1.5s ease-in-out;
-	transition: 1.5s ease-in-out;
-	transform-style: preserve-3d;
+
+
+
+
+
+
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul {
+  padding: 50px 0;
 }
 
-.side {
-	position: absolute;
-	text-align: center;
-	width: 100%;
-	height: 100%;
-	padding: 20px 50px;
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #8DC174;
+  border-radius: 25px;
+  transition: background-color 2s ease-out 100ms
+}
+.timeline ul li div:hover {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #53ac2a;
+  border-radius: 25px;
+}
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+
+
+
+body{
+	font-size: 20px;
+	font-family: sans-serif;
+	color: #333;
+}
+.question{
+	font-weight: 600;
+}
+.answers {
+  margin-bottom: 20px;
+}
+.answers label{
+  display: block;
+}
+#submit{
+	font-family: sans-serif;
+	font-size: 20px;
+	background-color: #279;
 	color: #fff;
-	transform-style: preserve-3d;
-	backface-visibility: hidden;
-	border-radius: 20px;
-}
-.content {
-	transform: translatez(70px) scale(0.8);
-	line-height: 1.5em;
-}
-.content h1 {
-	position: relative;
-}
-.content p {
-	margin-top: 50px;
-	line-height: 2em;
-}
-.content h1:before {
-	content: "";
-	position: absolute;
-	bottom: -20px;
-	height: 3px;
-	background-color: #3e3;
-	width: 70px;
-	left: 50%;
-	transform: translateX(-50%);
-}
-.front {
-	z-index: 2;
-	background-size: 100vh;
-	background-size: cover;
-	background-image: url(https://userscontent2.emaze.com/images/f9538183-0ff9-478f-b964-c8ab90421e3b/3d28e192fda5c17250f96a2779c84475.jpg);
-}
-.back {
-	background-color: #333;
-	transform: rotateY(180deg);
-	z-index: 0;
-	padding-top: 10px;
-	background-image: url(https://userscontent2.emaze.com/images/f9538183-0ff9-478f-b964-c8ab90421e3b/3d28e192fda5c17250f96a2779c84475.jpg);
-}
-.container:hover {
-	-webkit-transform: rotateY(180deg);
-	transform: rotateY(180deg);
-}
-form {
-	text-align: left;
-}
-.back h1 {
-	margin: 0;
-}
-form label,
-form input {
-	display: block;
-}
-form input,
-form textarea {
-	background: transparent;
-	border: 0;
-	border-bottom: 2px solid #444;
-	padding: 5px;
-	width: 100%;
-	color: #fff;
-}
-form label {
-	margin: 15px 0;
-}
-form input[type="submit"] {
-	display: block;
-	width: auto;
-	margin: 10px auto;
-	padding: 5px 10px;
-	border: 3px solid #555;
-	border-radius: 4px;
-	color: #fff;
-	cursor: pointer;
-}
-/* my button style  */
-.white-mode {
-	text-decoration: none;
-	padding: 7px 10px;
-	background-color: #122;
+	border: 0px;
 	border-radius: 3px;
-	color: #fff;
-	transition: 0.35s ease-in-out;
-	position: fixed;
-	left: 15px;
-	bottom: 15px;
-	font-family: "Montserrat";
+	padding: 20px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+#submit:hover{
+	background-color: #38a;
 }
 
-.white-mode:hover {
-	background-color: #fff;
-	color: #122;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
