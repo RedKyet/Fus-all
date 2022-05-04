@@ -18,14 +18,14 @@ const myQuestions = [
       correctAnswer: "b"
     },
     {
-      question: "În ce dată s-a",
+      question: "Care este cea mai titrata echipă?",
       answers: {
-        a: "1",
-        b: "1",
-        c: "1",
-        d: "1"
+        a: "Steaua",
+        b: "CFR Cluj",
+        c: "Dinamo",
+        d: "Oțelul Galați"
       },
-      correctAnswer: "d"
+      correctAnswer: "a"
     }
   ];
 const quizContainer = document.getElementById('quiz');
