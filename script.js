@@ -1,24 +1,24 @@
 const myQuestions = [
     {
-      question: "1",
+      question: "Câte titluri naționale are Steaua în palmares?",
       answers: {
-        a: "1",
-        b: "1",
-        c: "1"
+        a: "17",
+        b: "3",
+        c: "26"
       },
       correctAnswer: "c"
     },
     {
-      question: "1",
+      question: "Care este unica echipă din Moldova ce a câștigat un titlu național",
       answers: {
-        a: "1",
-        b: "1",
-        c: "1"
+        a: "Dacia Unirea Brăila",
+        b: "Oțelul Galați",
+        c: "FC Botoșani"
       },
-      correctAnswer: "c"
+      correctAnswer: "b"
     },
     {
-      question: "1",
+      question: "În ce dată s-a",
       answers: {
         a: "1",
         b: "1",
@@ -62,13 +62,13 @@ function showResults(){
      const userAnswer = (answerContainer.querySelector(selector) || {}).value;
      if(userAnswer === currentQuestion.correctAnswer){
         numCorrect++;
-        answerContainers[questionNumber].style.color = 'lightgreen';
+        answerContainers[questionNumber].style.color = '#88D498';
       }
       else{
-        answerContainers[questionNumber].style.color = 'red';
+        answerContainers[questionNumber].style.color = '#DE541E';
       }
     });
-    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    resultsContainer.innerHTML = `${numCorrect} din ${myQuestions.length}`;
   }
 
   buildQuiz();

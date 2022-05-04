@@ -38,31 +38,34 @@ html, body {
 }
 
 .topnav a:hover {
-  background-color: #F3E9D2;
+  background-color: #C6DABF;
   color: black;
 }
 
 .topnav a.active {
   background-color: #88D498;
-  color: white;
+  color: #F8F1FF;
 }
+
+
+
 
 #wrapper{
   font-family: "Helvetica";
   font-size: 100px;
-  color: white;
+  color: #F8F1FF;
   text-align: center;
 }
   #wrapper2{
   font-family: "Helvetica";
   font-size: 30px;
-  color: white;
+  color: #F8F1FF;
   text-align: center;
 }
 #subtitle{
   font-family: "Helvetica";
   font-size: 50px;
-  color: white;
+  color: #F8F1FF;
   text-align: center;
 }
 
@@ -84,27 +87,30 @@ html, body {
   list-style-type: none;
   position: relative;
   width: 6px;
-  margin: 0 auto;
+  margin: -30 auto;
   padding-top: 50px;
-  background: #fff;
+  background: #F8F1FF;
 }
 
 .timeline ul li div {
   position: relative;
+  
+  margin: 20px auto;
   bottom: 0;
-  width: 400px;
+  width: 500px;
   padding: 15px;
-  color:white;
-  background: #333;
+  color:#F8F1FF;
+  background: #8D818C;
   border-radius: 25px;
   font-size: 20px;
-  transition: background-color 0.5s ease-out 100ms
+  transition: background-color 0.5s ease-out 100ms;
+  
 }
 
 .timeline ul li div:hover {
   position: relative;
   bottom: 0;
-  width: 400px;
+  width: 500px;
   padding: 15px;
   background: #88D498;
   border-radius: 25px;
@@ -115,7 +121,7 @@ html, body {
 
 
 .timeline ul li:nth-child(even) div {
-  left: -439px;
+  left: -560px;
 }
 
 time {
@@ -128,10 +134,10 @@ time {
 
 #quiz{
   padding-top: 50px;
-  color:white;
+  color:#F8F1FF;
   font-family: "Helvetica";
   font-size: 30px;
-  color: white;
+  color: #F8F1FF;
   text-align: center;
 }
 .question{
@@ -147,7 +153,7 @@ time {
 	font-family: sans-serif;
 	font-size: 20px;
 	background-color: #88D498;
-	color: #fff;
+	color: #F8F1FF;
 	border: 0px;
 	border-radius: 15px;
 	padding: 20px;
@@ -166,8 +172,8 @@ time {
   bottom: 0;
   width: 400px;
   padding: 15px;
-  color:white;
-  background: #333;
+  color:#F8F1FF;
+  background: #8D818C;
   border-radius: 25px;
   transition: background-color 0.5s ease-out 100ms
 
@@ -179,11 +185,96 @@ time {
 
 
 
+#results{
+  font-family: "Helvetica";
+  font-size: 100px;
+  color: #F8F1FF;
+  text-align: center;
+}
 
 
 
 
 
+.border{
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
 
+  &:hover
+    border: 1px solid white;
+}
+  
+.card{
+  height: 379px;
+  width: 300px;
+  background: grey;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: black;
+  box-shadow: 0 70px 63px -60px #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+  
+
+.card0{
+  background: url('https://cacheimg.gsp.ro/autocrop/smp-images-production/gsp.ro/05022020/1580891900461.jpg?width=900&height=700') center center no-repeat;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: auto 100%;
+  
+
+  
+    
+
+    
+      
+
+    
+      
+}
+.card0:hover{
+    background: url('https://cacheimg.gsp.ro/autocrop/smp-images-production/gsp.ro/05022020/1580891900461.jpg?width=900&height=700') left center no-repeat;
+    background-repeat: no-repeat;
+  background-size: contain;
+  background-size: auto 150%;
+  
+  }
+.card0:hover h2{
+      opacity: 1;
+    }
+
+.card0:hover .fa{
+      opacity: 1;
+    }
+h2{
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: white;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+  
+
+.fa{
+  opacity: 0;
+  transition: opacity 1s;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+  
+
+
+  
 
 
