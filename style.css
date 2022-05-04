@@ -24,7 +24,7 @@ html, body {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #0C090D;
   border-radius: 25px;
 }
 
@@ -38,12 +38,12 @@ html, body {
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #F3E9D2;
   color: black;
 }
 
 .topnav a.active {
-  background-color: #32B100;
+  background-color: #88D498;
   color: white;
 }
 
@@ -56,6 +56,12 @@ html, body {
   #wrapper2{
   font-family: "Helvetica";
   font-size: 30px;
+  color: white;
+  text-align: center;
+}
+#subtitle{
+  font-family: "Helvetica";
+  font-size: 50px;
   color: white;
   text-align: center;
 }
@@ -88,16 +94,19 @@ html, body {
   bottom: 0;
   width: 400px;
   padding: 15px;
-  background: #8DC174;
+  color:white;
+  background: #333;
   border-radius: 25px;
-  transition: background-color 2s ease-out 100ms
+  font-size: 20px;
+  transition: background-color 0.5s ease-out 100ms
 }
+
 .timeline ul li div:hover {
   position: relative;
   bottom: 0;
   width: 400px;
   padding: 15px;
-  background: #53ac2a;
+  background: #88D498;
   border-radius: 25px;
 }
 .timeline ul li:nth-child(odd) div {
@@ -117,13 +126,13 @@ time {
 }
 
 
-
-
-
-body{
-	font-size: 20px;
-	font-family: sans-serif;
-	color: #333;
+#quiz{
+  padding-top: 50px;
+  color:white;
+  font-family: "Helvetica";
+  font-size: 30px;
+  color: white;
+  text-align: center;
 }
 .question{
 	font-weight: 600;
@@ -137,19 +146,35 @@ body{
 #submit{
 	font-family: sans-serif;
 	font-size: 20px;
-	background-color: #279;
+	background-color: #88D498;
 	color: #fff;
 	border: 0px;
-	border-radius: 3px;
+	border-radius: 15px;
 	padding: 20px;
 	cursor: pointer;
-	margin-bottom: 20px;
+	
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 #submit:hover{
-	background-color: #38a;
+	background-color:#1A936F;
 }
 
+#quiz {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  color:white;
+  background: #333;
+  border-radius: 25px;
+  transition: background-color 0.5s ease-out 100ms
 
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
 
 
 
