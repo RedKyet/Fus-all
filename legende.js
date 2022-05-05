@@ -14,10 +14,8 @@ var style = document.createElement('style');
 style.innerHTML =
 	'.card',i,'{background: url(https://media.hotnews.ro/media_server1/image-2020-02-5-23644031-41-victoria-are-chipul-lui-gica-hagi.jpg) center center no-repeat;background-repeat: no-repeat;background-size: contain;background-size: auto 100%; }.card',i,':hover{background: url(https://media.hotnews.ro/media_server1/image-2020-02-5-23644031-41-victoria-are-chipul-lui-gica-hagi.jpg) center center no-repeat;background-repeat: no-repeat;background-size: contain;background-size: auto 150%;}';
 
-// Get the first script tag
 var ref = document.querySelector('script');
 
-// Insert our new styles before the first script tag
 ref.parentNode.insertBefore(style, ref);
 
     }
@@ -27,11 +25,3 @@ ref.parentNode.insertBefore(style, ref);
     }
     
   }
-
-
-
-
-
-//var styleSheet = document.createElement("style")
-//styleSheet.innerText = styles
-//document.head.appendChild(styleSheet)

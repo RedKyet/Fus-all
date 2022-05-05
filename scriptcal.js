@@ -41,23 +41,22 @@ const calarr=[["2021/07/15","FC Botoșani"],
 
 document.open();
 
-//check if a date is in the past
+//verificam daca o data este in trecut
 function isinpast(date) {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
   return date < today;
 }
 
-//convert from american date to rom
+//convertim din yyyy/mm/dd in dd-mm-yyyy
 function convtorom(date)
   {
     const date_arr = date.split('/');
     date_rom = date_arr[2]+'-'+date_arr[1]+'-'+date_arr[0];
     return date_rom;
   }
-//american format is yyyy/mm/dd
 
-//past matches are formatted red
+//meciurile trecute sunt formatate cu rosu
 
 document.write('<section><div class="cal-class"><div>')
 for(var i=calarr.length-1;i>=0;i--)
