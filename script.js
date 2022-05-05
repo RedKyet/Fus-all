@@ -27,6 +27,45 @@ const myQuestions = [
         d: "Oțelul Galați"
       },
       correctAnswer: "a"
+    },
+    {
+      question: "În ce ediție de campionat, din ultimele cinci, a marcat Steaua cele mai puține goluri, după primele șase etape?",
+      answers: {
+        a: "2017/2018",
+        b: "2014",
+        c: "2015",
+        d: "2015/2016",
+        e: "2014/2015"
+      },
+      correctAnswer: "d"
+    },
+    {
+      question: "Ce fotbalist a marcat în Etapa a 6-a la debutul în Liga 1?",
+      answers: {
+        a: "Romario Moise",
+        b: "Abang Anatole Bertrand",
+        c: "Jo Santos",
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Câte meciuri în prima divizie a contabilizat Romario Benzar, la finalul partidei dintre Steaua si Astra?",
+      answers: {
+        a: "150",
+        b: "50",
+        c: "100",
+        d: "69"
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "Ce antrenor are cele mai multe meciuri în prima divizie?",
+      answers: {
+        a: "Mircea Lucescu",
+        b: "Emeric Ienei",
+        c: "Florin Halagian"
+      },
+      correctAnswer: "c"
     }
   ];
 const quizContainer = document.getElementById('quiz');

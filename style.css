@@ -70,15 +70,30 @@ html, body {
 }
 #datecal_upcoming{
   font-family: "Helvetica";
-  font-size: 25px;
+  font-size: 30px;
   color: #F8F1FF;
   text-align: center;
+  line-height: 2;
 }
 #datecal_past{
   font-family: "Helvetica";
-  font-size: 25px;
+  font-size: 30px;
   color: #ec2d2d;
   text-align: center;
+  line-height: 2;
+}
+.cal-class {
+  font-size: 0.8rem;
+  line-height:0.8rem;
+  text-align:center;
+}
+.cal-class span {
+    display:inline-block;
+    width:400px;
+    text-align:left;
+}
+.cal-class span:first-of-type {
+    text-align:right
 }
 
 
@@ -86,9 +101,6 @@ html, body {
 
 
 
-
-/* TIMELINE
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul {
   padding: 50px 0;
@@ -151,7 +163,6 @@ time {
   color:#F8F1FF;
   font-family: "Helvetica";
   font-size: 20px;
-  color: #F8F1FF;
   text-align: center;
 }
 .question{
@@ -159,9 +170,10 @@ time {
 }
 .answers {
   margin-bottom: 20px;
+  left: 20px;
 }
 .answers label{
-  display: block;
+ display:block;
 }
 #submit{
 	font-family: sans-serif;
@@ -207,7 +219,18 @@ time {
 }
 
 
-
+input[type="radio"] {
+  accent-color: #000000;
+  border: 0.15em solid #88D498;
+  border-radius: 50%;
+  background-color:#88D498;
+}
+input[type="radio"]:focus {
+  accent-color: #000000;
+  outline: max(2px, 0.15em) solid #88D498;
+  outline-offset: max(2px, 0.15em);
+  background-color:#88D498;
+}
 
 
 .border{
@@ -338,10 +361,10 @@ h2{
 }
   
 #container {
-  display: flex;                  /* establish flex container */
-  flex-direction: row;            /* default value; can be omitted */
-  flex-wrap: nowrap;              /* default value; can be omitted */
-  justify-content: space-between; /* switched from default (flex-start, see below) */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
  
 }
 #container > div {
