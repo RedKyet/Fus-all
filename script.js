@@ -32,10 +32,8 @@ const myQuestions = [
       question: "În ce ediție de campionat, din ultimele cinci, a marcat Steaua cele mai puține goluri, după primele șase etape?",
       answers: {
         a: "2017/2018",
-        b: "2014",
-        c: "2015",
-        d: "2015/2016",
-        e: "2014/2015"
+        b: "2015/2016",
+        c: "2014/2015"
       },
       correctAnswer: "d"
     },
