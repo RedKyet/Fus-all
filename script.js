@@ -1,3 +1,4 @@
+//toate intrebarile
 const myQuestions = [
     {
       question: "Câte titluri naționale are Steaua în palmares?",
@@ -31,7 +32,7 @@ const myQuestions = [
 const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
-function buildQuiz(){
+function buildQuiz(){//generam quiz
   const output = [];
    myQuestions.forEach(
      (currentQuestion, questionNumber) => {

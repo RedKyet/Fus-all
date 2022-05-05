@@ -68,7 +68,18 @@ html, body {
   color: #F8F1FF;
   text-align: center;
 }
-
+#datecal_upcoming{
+  font-family: "Helvetica";
+  font-size: 25px;
+  color: #F8F1FF;
+  text-align: center;
+}
+#datecal_past{
+  font-family: "Helvetica";
+  font-size: 25px;
+  color: #ec2d2d;
+  text-align: center;
+}
 
 
 
@@ -123,6 +134,8 @@ html, body {
 .timeline ul li:nth-child(even) div {
   left: -560px;
 }
+
+
 
 time {
   display: block;
@@ -225,34 +238,84 @@ time {
   
 
 .card0{
-  background: url('https://cacheimg.gsp.ro/autocrop/smp-images-production/gsp.ro/05022020/1580891900461.jpg?width=900&height=700') center center no-repeat;
+  background: url('https://media.hotnews.ro/media_server1/image-2020-02-5-23644031-41-victoria-are-chipul-lui-gica-hagi.jpg') center center no-repeat;
   background-repeat: no-repeat;
   background-size: contain;
-  background-size: auto 100%;
-  
-
-  
-    
-
-    
-      
-
-    
-      
+  background-size: auto 100%; 
 }
 .card0:hover{
-    background: url('https://cacheimg.gsp.ro/autocrop/smp-images-production/gsp.ro/05022020/1580891900461.jpg?width=900&height=700') left center no-repeat;
+    background: url('https://media.hotnews.ro/media_server1/image-2020-02-5-23644031-41-victoria-are-chipul-lui-gica-hagi.jpg') center center no-repeat;
     background-repeat: no-repeat;
   background-size: contain;
   background-size: auto 150%;
-  
   }
-.card0:hover h2{
+.card1{
+  background: url('https://www.romaniansoccer.ro/ewcms/uploads/modules/clasamente/players/1903-stelea.jpg') center center no-repeat;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: auto 100%; 
+}
+.card1:hover{
+    background: url('https://www.romaniansoccer.ro/ewcms/uploads/modules/clasamente/players/1903-stelea.jpg') center center no-repeat;
+    background-repeat: no-repeat;
+  background-size: contain;
+  background-size: auto 150%;
+  }
+.card2{
+  background: url('https://theplaymaker.ro/wp-content/uploads/2019/09/ilie-dumitrescu-premier-league.jpg') center center no-repeat;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: auto 100%; 
+}
+.card2:hover{
+    background: url('https://theplaymaker.ro/wp-content/uploads/2019/09/ilie-dumitrescu-premier-league.jpg') center center no-repeat;
+    background-repeat: no-repeat;
+  background-size: contain;
+  background-size: auto 150%;
+  }
+.card3{
+  background: url('https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxdHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMTkl/MkYwNCUyRjExJTJGMTA2Mjc4Nl8xMDYy/Nzg2X2dpY2EtY3JhaW92ZWFudS5qcGcm/dz03MDAmaD00MjAmaGFzaD1iYjY1Y2M1/NWJjMDc4NjAxZjI4NzBhNTkzNjYwNzhmZA==.thumb.jpg') right center no-repeat;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: auto 100%; 
+}
+.card3:hover{
+    background: url('https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxdHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMTkl/MkYwNCUyRjExJTJGMTA2Mjc4Nl8xMDYy/Nzg2X2dpY2EtY3JhaW92ZWFudS5qcGcm/dz03MDAmaD00MjAmaGFzaD1iYjY1Y2M1/NWJjMDc4NjAxZjI4NzBhNTkzNjYwNzhmZA==.thumb.jpg') right center no-repeat;
+    background-repeat: no-repeat;
+  background-size: contain;
+  background-size: auto 150%;
+  }
+.card4{
+  background: url('https://cacheimg.gsp.ro/autocrop/smp-images-production/gsp.ro/14122020/1607954858666.jpg?width=848&height=0') center center no-repeat;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: auto 100%; 
+}
+.card4:hover{
+    background: url('https://cacheimg.gsp.ro/autocrop/smp-images-production/gsp.ro/14122020/1607954858666.jpg?width=848&height=0') center center no-repeat;
+    background-repeat: no-repeat;
+  background-size: contain;
+  background-size: auto 150%;
+  }
+.card5{
+  background: url('https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg):focal(1144x254:1146x252)/origin-imgresizer.eurosport.com/2020/04/19/2808355-57932128-2560-1440.jpg') center center no-repeat;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: auto 100%; 
+}
+.card5:hover{
+    background: url('https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg):focal(1144x254:1146x252)/origin-imgresizer.eurosport.com/2020/04/19/2808355-57932128-2560-1440.jpg') center center no-repeat;
+    background-repeat: no-repeat;
+  background-size: contain;
+  background-size: auto 150%;
+  }
+
+.card:hover h2{
       opacity: 1;
     }
 
-.card0:hover .fa{
-      opacity: 1;
+.card:hover .fa{
+      opacity: 0.4;
     }
 h2{
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -273,7 +336,16 @@ h2{
   
 }
   
-
+#container {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between; /* switched from default (flex-start, see below) */
+ 
+}
+#container > div {
+  margin: 20px;
+}
 
   
 
